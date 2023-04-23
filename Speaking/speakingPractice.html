@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Speaking Practice</title>
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+    />
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./speakingcss.css" />
+  </head>
+
+  <body>
+    <header class="container pt-3 pb-3">
+      <ul class="nav nav-pills">
+        <li class="nav-item">
+          <a class="nav-link" aria-current="page" href="/index.html">Home</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a
+            class="nav-link active"
+            data-bs-toggle="dropdown"
+            href="/Speaking/speakingPractice.html"
+            role="button"
+            aria-expanded="false"
+            >Speaking Practice</a
+          >
+        </li>
+      </ul>
+    </header>
+    <!-- blog breadcrumbs -->
+    <nav id="breadcrumbs" class="breadcrumbs">
+      <div class="container page-wrapper">
+        <a href="/index.html">Home</a> »
+        <span class="breadcrumb_last" aria-current="page"
+          >Speaking Practice</span
+        >
+        »
+        <a href="#" class="breadcrumb_last" aria-current="page">Speaking</a>
+      </div>
+    </nav>
+    <section class="container">
+      <div
+        class="nav nav-pills me-3"
+        id="v-pills-tab"
+        role="tablist"
+        aria-orientation="vertical"
+      >
+        <button
+          class="nav-link active"
+          data-bs-toggle="pill"
+          data-bs-target="#luyenPhim09"
+        >
+          Tet holiday
+        </button>
+      </div>
+      <div class="tab-content mt-2" id="v-pills-tabContent">
+        <div class="tab-pane fade show active talkContent" id="luyenPhim09">
+          <div class="talkContent_text">
+            <div class="kaiwa">
+              <p>
+                For hundreds of years, Tet has been a traditional festival and
+                ritual ceremony across Vietnam. Its importance in spiritual life
+                as a break-off period was honored by ordinary people and royal
+                dynasties. When Vietnam came into the new world, many things
+                happen to change, yet Tet stays as it has been for generations,
+                with a few modern twists. From every street, every house, and
+                every window, any foreigner could spot that this biggest holiday
+                is coming so close. Businesses and schools start to close down
+                between the 23rd and 27th of December (Lunar Calendar), for
+                students and employees to pack up and head home. Red lanterns
+                and Tet-style LEDs are hung up everywhere; commercial
+                advertisements now only field Tet-vibe. In some public spots or
+                large areas, kumquat trees, peach blossoms, or apricot blossoms
+                are planted and decorated. Yet, Vietnamese businesses don’t
+                basically stop. Our individual household businesses start weeks
+                before Tet. Tet Fiona markets are open in every municipality of
+                Vietnam, from small villages to crowded cities, with thousands
+                of “Tet” trees. Though both the Southern and Northern regions
+                have many common things, Vietnamese people still easily tell
+                them apart. Northern Tet’s traditional dishes focus on its
+                complexity in detail, layers, and taste; while Southern Tet’s
+                traditional dishes focus on its simplicity, folklore-kind in the
+                table. However, we still have the same dishes like steamed
+                white-cut chicken, deep-fried spring rolls, or sticky rice. In
+                the North, people would have ‘Chung’ cake (a square-like cake
+                that is stuffed with meat, beans, and sticky rice, covered in
+                “dong” or banana leaf and steamed) and sticky rice cake as
+                offerings to ancestors; while the Southern people would choose
+                “Tet” cake (a similar cake to “Chung” cake but is longer) as
+                offerings. Yet, no matter where you are, Vietnamese people
+                always reach for the unity of the family, on the, maybe, most
+                sacred holiday. Many people who are workers, students, or even
+                Vietnamese overseas, try to come back home for a reunion. Hope
+                you guys have a beautiful Tet holiday!
+              </p>
+            </div>
+            <!-- <div class="tuVung">
+              <h5>Từ vựng</h5>
+            </div>
+            <div class="nguPhap">
+              <h5>Ngữ Pháp</h5>
+            </div> -->
+          </div>
+          <div class="audioFix"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- BS -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- TOOLTIPS BS -->
+    <script>
+      const tooltipTriggerList = document.querySelectorAll(
+        '[data-bs-toggle="tooltip"]'
+      );
+      const tooltipList = [...tooltipTriggerList].map(
+        (tooltipTriggerEl) => new bootstrap.Tooltip(tooltipTriggerEl)
+      );
+    </script>
+    <!-- Popovers -->
+    <!-- <script>
+           const popoverTriggerList = document.querySelectorAll('[data-bs-toggle="popover"]')
+           const popoverList = [...popoverTriggerList].map(popoverTriggerEl => new bootstrap.Popover(popoverTriggerEl))
+       </script> -->
+    <script>
+      $(".control-audio").click(function () {
+        let src = $(this).attr("src");
+        const audio = new Audio(src);
+        audio.play();
+      });
+    </script>
+  </body>
+</html>
