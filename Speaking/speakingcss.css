@@ -326,3 +326,28 @@ ol li a {
 .table > :not(caption) > * > * {
   padding: 0;
 }
+
+.tab-pane article h4 {
+  text-align: center;
+}
+
+.tab-pane article h4 a {
+  color: #020408;
+  font-weight: 500;
+}
+.tab-pane article p {
+  line-height: 2;
+}
+.tab-pane p ruby rt i {
+  font-size: 12px;
+}
+.tab-pane h5 {
+  color: #dc4f72;
+  font-weight: 600;
+}
+.tab-pane p span {
+  background-color: rgb(154, 253, 220);
+}
+.tab-pane .detailGram {
+  padding-left: 20px;
+}
