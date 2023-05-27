@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>youtube channel</title>
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+    />
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./youtube.css" />
+  </head>
+
+  <body>
+    <section>
+      <div class="video-background">
+        <!-- <video autoplay muted loop id="video">
+                <source src="../img/Canhhoadaoroi_ver1.mp4" type="video/mp4" />
+              </video> -->
+        <div class="content">
+          <h2>
+            有料版「ChatGPT」にマイクロソフト社の検索エンジン「Bing」を搭載(2023年5月24日)
+          </h2>
+          <p>
+            マイクロソフト社の検索エンジンが「ChatGPT」に搭載されます。
+            　23日、マイクロソフト社はChatGPTに検索エンジン「Bing」が搭載されると発表しました。
+            　これまでChatGPTは蓄積されたデータに基づく回答だけしかできず、最新の情報に関する回答はできませんでした。
+            　しかし今後、ニュースや天気予報などリアルタイムで取得した情報を反映した回答もできるとしています。
+            　有料の「ChatGPTプラス」から先にこの機能が反映され、近く無料版でも使えるようになるということです。
+            　マイクロソフト社はChatGPTを開発したオープンAI社との連携を強めているとみられていて、2月にはマイクロソフト社のブラウザー「EDGE」と「Bing」にChatGPTの技術を用いるなどしていました。
+          </p>
+        </div>
+      </div>
+    </section>
+    <!-- BS -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- TOOLTIPS BS -->
+    <script>
+      const tooltipTriggerList = document.querySelectorAll(
+        '[data-bs-toggle="tooltip"]'
+      );
+      const tooltipList = [...tooltipTriggerList].map(
+        (tooltipTriggerEl) => new bootstrap.Tooltip(tooltipTriggerEl)
+      );
+    </script>
+    <!-- Popovers -->
+    <!-- <script>
+           const popoverTriggerList = document.querySelectorAll('[data-bs-toggle="popover"]')
+           const popoverList = [...popoverTriggerList].map(popoverTriggerEl => new bootstrap.Popover(popoverTriggerEl))
+       </script> -->
+    <script>
+      $(".control-audio").click(function () {
+        let src = $(this).attr("src");
+        const audio = new Audio(src);
+        audio.play();
+      });
+    </script>
+  </body>
+</html>
