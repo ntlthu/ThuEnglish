@@ -397,7 +397,7 @@ ol li a {
   background-color: antiquewhite;
 }
 .rikacontentNgheDoc h2 {
-  font-size: 22px;
+  font-size: 33px;
   font-weight: bold;
   /* margin-bottom: 10px; */
   padding-top: 14px;
@@ -405,9 +405,10 @@ ol li a {
 }
 .rikacontentNgheDoc p {
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
-  /* font-weight: 600; */
-  line-height: 1.5;
-  font-size: 21px;
+  font-weight: 600;
+  line-height: 2;
+  font-size: 32px;
+  margin-top: 22px;
 }
 
 .rikatitle {
@@ -492,7 +493,7 @@ ol li a {
     color: #0000ff;
   }
   50% {
-    color: red;
+    color: #07D2F6;
   }
   100% {
     color: green;
