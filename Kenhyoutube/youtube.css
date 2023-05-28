@@ -1,4 +1,5 @@
 /* GLOBAL CSS */
+
 * {
   box-sizing: border-box;
   font-family: "Nunito", sans-serif;
@@ -104,13 +105,13 @@ nav#breadcrumbs a:hover {
   color: #020408;
 }
 
-.content h1 {
+.rikacontentLan1 h2 {
   font-size: 32px;
   font-weight: bold;
   margin-bottom: 20px;
 }
 
-.content p {
+.rikacontentLan1 p {
   font-size: 18px;
 }
 
@@ -394,4 +395,119 @@ ol li a {
 }
 .tab-pane .detailGram {
   padding-left: 20px;
+}
+.rika {
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: space-between;
+  background-color: antiquewhite;
+}
+/* .rikalogo h3 {
+  display: inline-block;
+} */
+.rikabutton {
+  display: inline-block;
+  margin-left: 20px;
+  padding-top: 13px;
+}
+.rikalogo {
+  display: inline-block;
+}
+
+.rikalogo img {
+  width: 70px;
+}
+.rikalogo h3 {
+  font-size: 27px;
+  font-weight: 900;
+  color: #ff4500;
+  letter-spacing: -1px;
+  margin-bottom: 0;
+}
+.rikabutton button {
+  padding: 10px 25px;
+  font-size: 18px;
+  font-weight: 800;
+  text-transform: uppercase;
+  border: 1px solid transparent;
+  border-radius: 30px;
+  color: #fff;
+  cursor: pointer;
+  display: inline-block;
+  background-image: linear-gradient(
+    to right,
+    #f55f8d 0,
+    #f8ae56 51%,
+    #f55f8d 100%
+  );
+  transition: all 0.5s;
+  background-size: 200%;
+}
+.rikabutton button:hover {
+  background-position: right center;
+}
+.rikabutton h4 {
+  margin-top: 5px;
+  font-weight: 700;
+  animation: colorChange 5s infinite;
+}
+/* gốc */
+/* @keyframes colorChange {
+  0% {
+    color: red;
+  }
+  50% {
+    color: blue;
+  }
+  100% {
+    color: green;
+  }
+} */
+@keyframes colorChange {
+  0% {
+    color: #0000ff;
+  }
+  50% {
+    color: red;
+  }
+  100% {
+    color: green;
+  }
+}
+/* CHOOSE US */
+.chooseUs__content .item {
+  border-radius: 6px;
+  background-color: #f7f9fc;
+  /* padding: 3rem 2rem; */
+  border: 1px solid #f7f9fc;
+  transition: all 0.4s ease-in;
+}
+
+.chooseUs__content .item:hover {
+  background-color: #ffffff;
+  border: 1px solid #eee;
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.09);
+  transform: translateY(-0.5rem);
+}
+
+.chooseUs__content .item h3 {
+  color: var(--title-color);
+  font-size: 26px;
+  line-height: 35px;
+  font-weight: 700;
+}
+
+.chooseUs__content .item p {
+  color: var(--text-color);
+  margin-top: 15px;
+  font-size: 17px;
+  line-height: 24.5px;
+}
+/* .chooseUs__content .row {
+  padding-right: 5px;
+  padding-left: 5px;
+} */
+.chooseUs__content .row .setPadding {
+  padding-right: 5px;
+  padding-left: 5px;
 }
