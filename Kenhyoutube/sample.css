@@ -35,3 +35,25 @@
 .content p {
   font-size: 18px;
 }
+.pagination {
+  display: flex;
+  justify-content: center;
+}
+
+.pagination a {
+  margin: 0 5px;
+  padding: 5px 10px;
+  text-decoration: none;
+  background-color: lightgray;
+  color: black;
+}
+
+.pagination a:hover {
+  background-color: gray;
+  color: white;
+}
+
+.pagination .active {
+  background-color: gray;
+  color: white;
+}

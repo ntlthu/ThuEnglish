@@ -109,16 +109,6 @@ nav#breadcrumbs a:hover {
   color: #020408;
 }
 
-.rikacontentLan1 h2 {
-  font-size: 32px;
-  font-weight: bold;
-  margin-bottom: 20px;
-}
-
-.rikacontentLan1 p {
-  font-size: 18px;
-}
-
 .faq-page {
   margin-right: 5px;
 }
@@ -401,14 +391,44 @@ ol li a {
   padding-left: 20px;
 }
 .rika {
-  margin-bottom: 20px;
+  margin-bottom: 10px;
   display: flex;
   justify-content: space-between;
   background-color: antiquewhite;
 }
-/* .rikalogo h3 {
+.rikacontentNgheDoc h2 {
+  font-size: 22px;
+  font-weight: bold;
+  /* margin-bottom: 10px; */
+  padding-top: 14px;
+  color: #0000ff;
+}
+.rikacontentNgheDoc p {
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  /* font-weight: 600; */
+  line-height: 1.5;
+  font-size: 21px;
+}
+
+.rikatitle {
+  display: flex;
+  justify-content: space-around;
+}
+.rikatitle .buttonluyennghe {
+  background-color: #4caf50;
+  border: none;
+  color: #fff;
+  /* padding: 8px 20px; */
+  text-align: center;
+  text-decoration: none;
   display: inline-block;
-} */
+  font-size: 22px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+  border-radius: 8px;
+  background-image: linear-gradient(to bottom, #4caf50, #45a049);
+}
+
 .rikabutton {
   display: inline-block;
   margin-left: 20px;
@@ -514,11 +534,4 @@ ol li a {
 .chooseUs__content .row .setPadding {
   padding-right: 5px;
   padding-left: 5px;
-}
-
-.rikacontentLan1 p {
-  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
-  /* font-weight: 600; */
-  line-height: 1.5;
-  font-size: 21px;
 }
