@@ -4,6 +4,10 @@
   box-sizing: border-box;
   font-family: "Nunito", sans-serif;
 }
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+JP&display=swap");
+body {
+  font-family: "Noto Sans JP", sans-serif;
+}
 
 html,
 body {
@@ -510,4 +514,11 @@ ol li a {
 .chooseUs__content .row .setPadding {
   padding-right: 5px;
   padding-left: 5px;
+}
+
+.rikacontentLan1 p {
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  /* font-weight: 600; */
+  line-height: 1.5;
+  font-size: 21px;
 }
