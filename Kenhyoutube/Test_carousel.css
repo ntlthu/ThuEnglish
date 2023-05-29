@@ -398,36 +398,8 @@ ol li a {
   font-size: 33px;
   font-weight: bold;
   /* margin-bottom: 10px; */
-  padding-top: 18px;
-  color:  #1E90FF;
-}
-.gradient-text1 {
-  background-image: linear-gradient(to right, #000000, #737373);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
-  text-fill-color: transparent;
-}
-.gradient-text2 {
-  background-image: linear-gradient(to bottom right, #000000, #737373);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
-  text-fill-color: transparent;
-}
-.gradient-text3 {
-  background-image: linear-gradient(to bottom left, #000000, #737373);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
-  text-fill-color: transparent;
-}
-.gradient-text4 {
-  background-image: linear-gradient(to top left, #000000, #737373);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
-  text-fill-color: transparent;
+  padding-top: 14px;
+  color: #0000ff;
 }
 .rikacontentNgheDoc .vanban p {
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
@@ -436,27 +408,16 @@ ol li a {
   font-size: 32px;
   margin-top: 22px;
 }
-.rikacontentNgheDoc .vanban .p-padding1{
-padding-top: 15px;
-}
-/* .rikacontentNgheDoc .vanban .p-padding2 {
-  
-} */
-.rikacontentNgheDoc .vanban .p-padding3 {
-  padding-top: 24px;
-}
-.rikacontentNgheDoc .vanban .p-padding4 {
-  padding-top: 56px;
-}
+
 .rikatitle {
   display: flex;
   justify-content: space-around;
 }
 .rikatitle .buttonluyennghe {
-  /* background-color: #4caf50; */
+  background-color: #4caf50;
   border: solid 1px;
   color: #fff;
-  padding: 14px 5px;
+  padding: 14px 20px;
   text-align: center;
   text-decoration: none;
   display: inline-block;
@@ -464,7 +425,7 @@ padding-top: 15px;
   transition-duration: 0.4s;
   cursor: pointer;
   border-radius: 8px;
-  background-image: linear-gradient(90deg, #0097b2, #7ed957);
+  background-image: linear-gradient(to bottom, #4caf50, #45a049);
   margin-bottom: 0;
   font-weight: 700;
 }
@@ -472,7 +433,7 @@ padding-top: 15px;
   background-color: #4caf50;
   border: solid 1px;
   color: #fff;
-  padding: 14px 5px;
+  padding: 14px 20px;
   text-align: center;
   text-decoration: none;
   display: inline-block;
@@ -509,10 +470,10 @@ padding-top: 15px;
 }
 
 .rikalogo img {
-  width: 75px;
+  width: 70px;
 }
 .rikalogo h3 {
-  font-size: 28px;
+  font-size: 27px;
   font-weight: 900;
   color: #ff4500;
   letter-spacing: -1px;
@@ -520,7 +481,7 @@ padding-top: 15px;
 }
 .rikabutton button {
   padding: 10px 25px;
-  font-size: 20px;
+  font-size: 18px;
   font-weight: 800;
   text-transform: uppercase;
   border: 1px solid transparent;
@@ -543,7 +504,6 @@ padding-top: 15px;
 .rikabutton h4 {
   margin-top: 5px;
   font-weight: 700;
-  font-size: 25px;
   animation: colorChange 5s infinite;
 }
 /* gốc */
@@ -611,28 +571,12 @@ ruby {
   word-break: keep-all;
   /* ruby-position: over; */
 }
-.carousel_single-item {
-  /* background-color: antiquewhite; */
-  background-image: url(./img/rika.png);
-  
-  /* background-size: cover; */
-  background-repeat: no-repeat;
-  background-position: center;
 
+.carousel_single-item {
+  background-color: antiquewhite;
   width: 900px;
   text-align: center;
 }
 .carousel_single-item .vanban {
   text-align: center;
-}
-
-.slick-dots li button::before {
-  color: rgb(245, 12, 12);
-  opacity: 0.5;
-  font-size: 15px;
-}
-
-.slick-dots li.slick-active button::before {
-  color: #960303;
-  opacity: 1;
 }
