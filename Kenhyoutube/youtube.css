@@ -409,7 +409,7 @@ ol li a {
   text-fill-color: transparent;
 }
 .gradient-text2 {
-  background-image: linear-gradient(to bottom right, #000000, #737373);
+  background-image: linear-gradient(to left, #000000, #737373);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
@@ -429,6 +429,27 @@ ol li a {
   background-clip: text;
   text-fill-color: transparent;
 }
+.gradient-text5 {
+  background-image: linear-gradient(90deg, #5170ff, #ff66c4);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+}
+.gradient-text6 {
+  background-image: linear-gradient(90deg, #000000, #c89116);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+} 
+.gradient-text7 {
+  background-image: linear-gradient(90deg, #ff2970, #a91bac);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+} 
 .rikacontentNgheDoc .vanban p {
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
   font-weight: 600;
@@ -446,7 +467,7 @@ padding-top: 15px;
   padding-top: 24px;
 }
 .rikacontentNgheDoc .vanban .p-padding4 {
-  padding-top: 56px;
+  padding-top: 46px;
 }
 .rikatitle {
   display: flex;
@@ -469,7 +490,6 @@ padding-top: 15px;
   font-weight: 700;
 }
 .rikatitle p.buttonluyendoc {
-  background-color: #4caf50;
   border: solid 1px;
   color: #fff;
   padding: 14px 5px;
@@ -480,11 +500,15 @@ padding-top: 15px;
   transition-duration: 0.4s;
   cursor: pointer;
   border-radius: 8px;
-  background-image: linear-gradient(to bottom, #4caf50, #45a049);
+  background-image: linear-gradient(90deg, #8c52ff, #00bf63);
   margin-bottom: 0;
   font-weight: 700;
 }
-
+p.buttonluyendich {
+  margin-bottom: 5px;
+  padding-bottom: 5px;
+  font-weight: 700;
+}
 .moving-text {
   animation: move 3s linear infinite;
 }
@@ -494,6 +518,20 @@ padding-top: 15px;
   }
   50% {
     transform: translateX(25px);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+.moving-text-dich {
+  animation: moveTextdich 3s linear infinite;
+}
+@keyframes moveTextdich {
+  0% {
+    transform: translateX(0);
+  }
+  50% {
+    transform: translateX(50px);
   }
   100% {
     transform: translateX(0);
@@ -575,28 +613,49 @@ padding-top: 15px;
   background-color: #f7f9fc;
   /* padding: 3rem 2rem; */
   border: 1px solid #f7f9fc;
-  transition: all 0.4s ease-in;
+  /* transition: all 0.4s ease-in; */
+  height: 435px;
 }
 
-.chooseUs__content .item:hover {
+/* .chooseUs__content .item:hover {
   background-color: #ffffff;
   border: 1px solid #eee;
   box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.09);
   transform: translateY(-0.5rem);
-}
+} */
 
+.background_title {
+  background-image: linear-gradient(90deg, #fff7ad, #ffa9f9);
+}
 .chooseUs__content .item h3 {
-  color: var(--title-color);
   font-size: 26px;
   line-height: 35px;
   font-weight: 700;
+  margin-bottom: 15px;
 }
 
 .chooseUs__content .item p {
   color: var(--text-color);
-  margin-top: 15px;
-  font-size: 17px;
-  line-height: 24.5px;
+  font-weight: 700;
+  /* font-size: 20px; */
+  /* line-height: 24.5px; */
+  text-align: left;
+margin-bottom: 13px;
+transition: all 0.4s ease-in;
+}
+.chooseUs__content .item .sizeTextVN {
+  font-size: 21px;
+  line-height: 29.5px;
+}
+.chooseUs__content .item .sizeTextJP {
+  font-size: 30px;
+  line-height: 44.5px;
+}
+.chooseUs__content .item p:hover {
+  background-color: #ffffff;
+  border: 1px solid #eee;
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.09);
+  transform: translateY(-0.5rem);
 }
 /* .chooseUs__content .row {
   padding-right: 5px;
@@ -605,6 +664,20 @@ padding-top: 15px;
 .chooseUs__content .row .setPadding {
   padding-right: 5px;
   padding-left: 5px;
+}
+
+.chooseUs__content .item .block1 {
+  height: 183px;
+}
+.chooseUs__content .item .block2 {
+  /* height: 75px; */
+  
+  
+}
+.chooseUs__content .item .blockShort {
+  height: 110px;
+ 
+  
 }
 
 ruby {
@@ -622,6 +695,21 @@ ruby {
   width: 900px;
   text-align: center;
 }
+.carousel_single-item1 {
+  /* background-color: antiquewhite; */
+  background-image: url(./img/rika.png);
+  
+  /* background-size: cover; */
+  background-repeat: no-repeat;
+  background-position: center;
+
+  width: 950px;
+  text-align: center;
+}
+.videothanks {
+  width: 100%;
+  max-height: 600px;
+}
 .carousel_single-item .vanban {
   text-align: center;
 }
@@ -635,4 +723,25 @@ ruby {
 .slick-dots li.slick-active button::before {
   color: #960303;
   opacity: 1;
+}
+
+
+
+
+.background_rika {
+  background-image: url(./img/rika.png);
+  
+  /* background-size: cover; */
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+
+
+.item .pTuvung span {
+  color: #0d6efd;
+}
+.item .gramContent .detailGram span {
+  width: 46px;
+  
 }
