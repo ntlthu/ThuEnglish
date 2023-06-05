@@ -383,7 +383,7 @@ ol li a {
 .content {
   position: absolute;
   top: 50%;
-  left: 50%;
+  left: 43%;
   transform: translate(-50%, -50%);
   text-align: center;
   color: #020408;
@@ -394,13 +394,7 @@ ol li a {
   justify-content: space-between;
   background-color: antiquewhite;
 }
-.rikacontentNgheDoc h2 {
-  font-size: 33px;
-  font-weight: bold;
-  /* margin-bottom: 10px; */
-  padding-top: 18px;
-  color:  #1E90FF;
-}
+
 .gradient-text1 {
   background-image: linear-gradient(to right, #000000, #737373);
   -webkit-background-clip: text;
@@ -472,8 +466,19 @@ padding-top: 15px;
 .rikatitle {
   display: flex;
   justify-content: space-around;
+  align-items: center;
+  text-align: center;
 }
-.rikatitle .buttonluyennghe {
+
+.rikatitle h2 {
+  font-size: 33px;
+  font-weight: bold;
+  /* margin-bottom: 10px; */
+  padding-top: 18px;
+  margin-left: 40px;
+  color:  #1E90FF;
+}
+.rikatitle p.buttonluyennghe {
   /* background-color: #4caf50; */
   border: solid 1px;
   color: #fff;
@@ -488,6 +493,9 @@ padding-top: 15px;
   background-image: linear-gradient(90deg, #0097b2, #7ed957);
   margin-bottom: 0;
   font-weight: 700;
+  
+  /* padding: 20px 5px;
+  height: 80px; */
 }
 .rikatitle p.buttonluyendoc {
   border: solid 1px;
@@ -503,6 +511,7 @@ padding-top: 15px;
   background-image: linear-gradient(90deg, #8c52ff, #00bf63);
   margin-bottom: 0;
   font-weight: 700;
+  
 }
 p.buttonluyendich {
   margin-bottom: 5px;
@@ -692,7 +701,7 @@ ruby {
   background-repeat: no-repeat;
   background-position: center;
 
-  width: 900px;
+  width: 1050px;
   text-align: center;
 }
 .carousel_single-item1 {
